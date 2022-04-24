@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "bd28b37c-941b-4808-87f1-4e702670f8e3",
+		"name": "express-mongoose-mangoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"愛奧尼雅\",\n    \"content\": \"岡察洛夫在過去曾經講過，人無疑是大地的主人，但又是胃腸的奴隸。這句話幾乎解讀出了問題的根本。每個人的一生中，幾乎可說碰到米凱拉這件事，是必然會發生的。米凱拉的存在，令我無法停止對他的思考。世界需要改革，需要對米凱拉有新的認知。\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://express-mongoose-mongodb.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"express-mongoose-mongodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改一則貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"米麗森\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://express-mongoose-mongodb.herokuapp.com/posts/625a91c75918249279808a2b",
+					"protocol": "https",
+					"host": [
+						"express-mongoose-mongodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"625a91c75918249279808a2b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一則貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"曼巴\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://express-mongoose-mongodb.herokuapp.com/posts/6264c3a29a67947a34e5463c",
+					"protocol": "https",
+					"host": [
+						"express-mongoose-mongodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"6264c3a29a67947a34e5463c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得全部貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"潔西卡\",\n    \"type\": \"自由心證\",\n    \"tags\": \"MEME\",\n    \"image\": \"https://picsum.photos/960/540?random=3\",\n    \"content\": \"不難發現，問題在於該用什麼標準來做決定呢？薛瑄說過一句發人省思的話，發言須句句有著落方好。人於忙處，言或妄發，所以有悔。但願諸位理解後能從中有所成長。帶著這些問題，我們一起來審視迷迭香。每個人的一生中，幾乎可說碰到迷迭香這件事，是必然會發生的。\",\n    \"likes\": 543,\n    \"comments\": 210\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://express-mongoose-mongodb.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"express-mongoose-mongodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"潔西卡\",\n    \"type\": \"自由心證\",\n    \"tags\": \"MEME\",\n    \"image\": \"https://picsum.photos/960/540?random=3\",\n    \"content\": \"不難發現，問題在於該用什麼標準來做決定呢？薛瑄說過一句發人省思的話，發言須句句有著落方好。人於忙處，言或妄發，所以有悔。但願諸位理解後能從中有所成長。帶著這些問題，我們一起來審視迷迭香。每個人的一生中，幾乎可說碰到迷迭香這件事，是必然會發生的。\",\n    \"likes\": 543,\n    \"comments\": 210\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://express-mongoose-mongodb.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"express-mongoose-mongodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
